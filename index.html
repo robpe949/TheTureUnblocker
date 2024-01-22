@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
     content = "width=device, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs/dist/bcrypt.js"></script>
     <style>
       body {
         display: flex;
@@ -34,13 +35,10 @@
       <h1 style="font-size: 5em;">
         OURA</h1>
         <form>
-        <input type="text" placeholder="Username">
-          <br>
-          <input type="password">
-          <br>
-          <input type="submit" value="login">
-          
-          
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Password</label>          
         </form>
     </div>
   </body>
