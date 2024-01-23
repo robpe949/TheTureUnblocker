@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
     content = "width=device, initial-scale=1.0">
-    <script ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcrypt@5.1.1/bcrypt.min.js"></script>
     <style>
       body {
         display: flex;
@@ -49,8 +49,6 @@
             username: 'Aidan', password: '$2y$10$0cj2cUqz4z19tQrPg.0VQOAxG/iY3iAs8RTfGtM4MAskEzcT9FvXG' }
           ];
           function Login() {
-            src="https://cdn.jsdelivr.net/npm/bcryptjs/dist/bcrypt.js"
-
             const enteredUsername = document.getElementById('username').value;
             const enteredPassword = document.getElementById('password').value;
 
