@@ -44,25 +44,19 @@
         <button type="button" onclick="Login()">Login</button>
         </form>
         <script>
-          const Users = [
-          {
-            username: 'Aidan', password: '$2y$10$0cj2cUqz4z19tQrPg.0VQOAxG/iY3iAs8RTfGtM4MAskEzcT9FvXG' }
-          ];
+          const Users = [{username: 'Aidan', password: '128934', passwrd: "1998", pasrd:"432912" }];
           function Login() {
             const enteredUsername = document.getElementById('username').value;
             const enteredPassword = document.getElementById('password').value;
 
             const user = Users.find(u => u.username === enteredUsername);
             if(user) {
-              bcrypt.compare(enteredPassword, user.password, function(err, result) {
-                if(result) {
-                  alert('login successful!');
-                } else {
-                  alert('Incorrect Username or password');
+                const paswrd = Users.find(u => u.passwrd === enteredPassword)
+                if(paswrd) {
+                    alert('Correct password');
+                    window.location.href = 'Unblocker\index.html';
+                    
                 }
-              }); 
-            } else {
-                alert('Incorrect username');
             }
           }
         </script>
