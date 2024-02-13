@@ -15,7 +15,7 @@ async function Scramble(input, code) {
         let key = await crypto.subtle.generateKey(code, false, ['encrypt', 'decrypt']);
         
         // Encrypt the input using the generated key
-        let encrypted = await crypto.subtle.encrypt({ name: "RSA-OAEP" }, key.publicKey, new TextEncoder().encode(input));
+        let encrypted = await crypto.subtle.encrypt({ name: "AES-CTR" }, key.publicKey, new TextEncoder().encode(input));
 
         // Convert the encrypted data to a string representation
         output = new Uint8Array(encrypted).toString();
