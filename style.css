@@ -1,0 +1,36 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">');
+
+img {
+    width: 200px;
+}
+
+a{
+  color:limegreen
+}
+}
+html {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    margin: 24px;
+    font-family: 'Roboto Mono', monospace;
+    color: #021e8d;
+    font-size: 14px;
+  image-size: ; 400px
+}
+
+section {
+    border-radius: 0px;
+    background-color: #3f3f3f;
+    padding: 24px;
+    min-height: 500px;
+    border: 8px gray inset;
+}
+
+section.on:after {
+    content: '_';
+    position: absolute;
+}
